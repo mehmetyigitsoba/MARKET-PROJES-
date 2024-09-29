@@ -25,35 +25,29 @@ namespace MARKET_PROJESİ
         internal static void UrunListele()
         {
             Console.WriteLine("ÜRÜN LİSTESİ");
-            int uzunluk = 0;
-            if (gida.Length >= giyim.Length && gida.Length >= bujiteri.Length)
+            Console.WriteLine("GIDA:");
+           
+            for (int i = 0; i < gida.Length; i++)
             {
-                uzunluk = gida.Length;
+
+                
+                Console.WriteLine($"{gida[i]}:{gidaFiyat[i]}TL");
             }
-            else if (giyim.Length >= gida.Length && giyim.Length >= bujiteri.Length)
+            Console.WriteLine("GİYİM:");
+
+            for (int i = 0; i < giyim.Length; i++)
             {
-                uzunluk = giyim.Length;
+
+               
+                Console.WriteLine($"{giyim[i]}:{giyimFiyat[i]}TL");
             }
-            else
+            Console.WriteLine("BUJİTERİ:");
+
+            for (int i = 0; i < bujiteri.Length; i++)
             {
-                uzunluk = bujiteri.Length;
-            }
-            for (int i = 0; i < uzunluk; i++)
-            {
-                if (i == 0)
-                {
-                    Console.WriteLine("GIDA");
-                }
-                else if (i == 1)
-                {
-                    Console.WriteLine("GİYİM");
-                }
-                else
-                {
-                    Console.WriteLine("BUJİTERİ");
-                }
-                Console.WriteLine($"{gida[i]},{giyim[i]},{bujiteri[i]}");
-                Console.WriteLine($"{gidaFiyat[i]}TL,{giyimFiyat[i]}TL,{bujiteriFiyat[i]}TL");
+
+               
+                Console.WriteLine($"{bujiteri[i]}:{bujiteriFiyat[i]}TL");
             }
         }
         internal static void URUNSATISI()
