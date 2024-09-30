@@ -56,7 +56,7 @@ namespace MARKET_PROJESİ
             while (true)
             {
                 
-                Console.WriteLine("gıda için-1\ngiyim için-2\nbujiteri için\nçıkmak için -0\nne istersiniz");
+                Console.WriteLine("gıda için-1\ngiyim için-2\nbujiteri için-3\nçıkmak için -0\nne istersiniz");
                 int secenek = Convert.ToInt32(Console.ReadLine());
                 if (secenek == 1)
                 {
@@ -113,7 +113,7 @@ namespace MARKET_PROJESİ
             Console.WriteLine("ÜRÜN EKLE");
             while (true)
             {
-                Console.WriteLine("gıda için-1\ngiyim için-2\nbujiteri için\nçıkmak için -0\nhangi reyona ürün eklemek istersiniz");
+                Console.WriteLine("gıda için-1\ngiyim için-2\nbujiteri için-3\nçıkmak için -0\nhangi reyona ürün eklemek istersiniz");
                 int secenek = Convert.ToInt32(Console.ReadLine());
                 if (secenek == 1)
                 {
@@ -142,7 +142,7 @@ namespace MARKET_PROJESİ
                     Console.WriteLine("eklemek istediğiniz ürününün fiyatını  girin");
                     yeniUrunFiyat = Convert.ToInt32(Console.ReadLine());
                     giyimFiyat[giyimFiyat.Length - 1] = yeniUrunFiyat;
-                    for (int i = 0; i < gida.Length; i++)
+                    for (int i = 0; i < giyim.Length; i++)
                     {
                         Console.WriteLine($"{giyim[i]}");
                         Console.WriteLine($"{giyimFiyat[i]}TL");
@@ -185,7 +185,7 @@ namespace MARKET_PROJESİ
             Console.WriteLine("ÜRÜN SİL");
             while (true)
             {
-                Console.WriteLine("gıda için-1\ngiyim için-2\nbujiteri için\nçıkmak için -0\nhangi reyondan ürün silmek istersiniz");
+                Console.WriteLine("gıda için-1\ngiyim için-2\nbujiteri için-3\nçıkmak için -0\nhangi reyondan ürün silmek istersiniz");
                 int secenek = Convert.ToInt32(Console.ReadLine());
                 
                 if (secenek == 1)
@@ -267,7 +267,7 @@ namespace MARKET_PROJESİ
             Console.WriteLine("ÜRÜN GÜNCELLEME");
             while (true)
             {
-                Console.WriteLine("gıda için-1\ngiyim için-2\nbujiteri için\nçıkmak için -0\nhangi reyondan ürün güncellemek istersiniz");
+                Console.WriteLine("gıda için-1\ngiyim için-2\nbujiteri için-3\nçıkmak için -0\nhangi reyondan ürün güncellemek istersiniz");
                 int secenek = Convert.ToInt32(Console.ReadLine());
                 
                 if (secenek == 1)
