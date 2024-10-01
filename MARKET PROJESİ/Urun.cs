@@ -50,7 +50,7 @@ namespace MARKET_PROJESİ
 
                     for (int y = 0; y < ürünler[i].Length; y++)
                     {
-                        Console.WriteLine($"{ürünler[i][y]}:{ürünFiyatlar[i][y]}");
+                        Console.WriteLine($"{ürünler[i][y]}:{ürünFiyatlar[i][y]}TL");
                     }
                     i++;
                 }
@@ -61,7 +61,7 @@ namespace MARKET_PROJESİ
 
                     for (int y = 0; y < ürünler[i].Length; y++)
                     {
-                        Console.WriteLine($"{ürünler[i][y]}:{ürünFiyatlar[i][y]}");
+                        Console.WriteLine($"{ürünler[i][y]}:{ürünFiyatlar[i][y]}TL");
                     }
                     i++;
                 }
@@ -72,7 +72,7 @@ namespace MARKET_PROJESİ
 
                     for (int y = 0; y < ürünler[i].Length; y++)
                     {
-                        Console.WriteLine($"{ürünler[i][y]}:{ürünFiyatlar[i][y]}");
+                        Console.WriteLine($"{ürünler[i][y]}:{ürünFiyatlar[i][y]}TL");
                     }
                     i++;
                 }
@@ -140,13 +140,6 @@ namespace MARKET_PROJESİ
                                 Console.WriteLine("rakam giriniz");
                             }
 
-
-
-
-
-
-
-
                         }
 
                         catch (FormatException)
@@ -156,7 +149,7 @@ namespace MARKET_PROJESİ
                     }
                     else if (cevap == 2)
                     {
-                        Console.WriteLine("alışveriş tutarı:" + alisverisTutari);
+                        Console.WriteLine($"alışveriş tutarı:{ alisverisTutari}TL");
                         Console.WriteLine("yine bekliyoruz");
                         break;
                     }
