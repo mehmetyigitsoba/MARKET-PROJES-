@@ -206,6 +206,7 @@ namespace MARKET_PROJESİ
                     }
                     else if (cevap == 2)
                     {
+                        Console.WriteLine("çıkış yaptınız");
                         UrunListele();
                         break;
                         
